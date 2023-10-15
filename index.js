@@ -1,22 +1,12 @@
 import express, { response } from 'express';
-import path from 'path';
 
 const app = express();
 
+// View engine
+app.set("view engine", "ejs");
+
 app.get("/", (req,res) => {
-
-    const pathlocation = path.resolve();
-
-    res.sendFile(path.join(pathlocation, "./index.html"));
-
-    /* res.json({
-        success: true,
-        products: [
-            'Yashvant Yadav',
-            'B.Tech',
-            'Computer Science'
-        ],
-    }); */
+    res.render("index.ejs");
 });
 
 app.listen(5000, () => {

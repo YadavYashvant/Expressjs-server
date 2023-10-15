@@ -1,9 +1,7 @@
-const http = require("http");
+import express from 'express';
 
-const server = http.createServer((req, res) => {
-   
+const app = express();
+
+app.listen(5000, () => {
+    console.log("app is running");
 });
-
-server.listen(5000, () => {
-    console.log("Server is running");
-})

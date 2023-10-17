@@ -112,11 +112,36 @@ input{
 }
 
 input:hover{
-    cursor: pointer;
-    background-color: #a6aae7;
-    border: 2px solid #a6aae7;
+    cursor: text;
+    background-color: #fff;
+    border: 2px solid #fff;
     transition: all ease-in-out .2s;
 }
+
+input:focus{
+    outline: none;
+}
+
+button{
+    margin: 20px;
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #333;
+    border: 2px solid #333;
+    color: white;
+    scale: 1.05;
+    font-weight: bold;
+    transition: all ease-in-out .2s;
+}
+
+
 
 label{
     margin: 20px;
@@ -140,4 +165,20 @@ select:hover{
 option{
     font-family: 'Space Grotesk', sans-serif;
     color: #d78e05;
+}
+
+.btn-type{
+    cursor: pointer;
+    background-color: #333;
+    border: 2px solid #333;
+    color: white;
+    transition: all ease-in-out .2s;
+}
+
+.btn-type:hover{
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #333;
+    transition: all ease-in-out .2s;
 }
